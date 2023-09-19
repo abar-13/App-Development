@@ -1,0 +1,98 @@
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Remove body margin to prevent horizontal scrolling */
+    font-family: Arial;
+    background-color: #ffffff;
+  }
+  
+  h3 {
+    text-align: center;
+  }
+  
+  form {
+    height: auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(164, 222, 255, 0.06);
+    border-radius: 20px;
+    box-shadow: 0 5px 10px 0 rgba(1, 130, 236, 0.37);
+    padding: 28px;
+    position: relative;
+    z-index: 3; /* Ensure the form is above the background image */
+  }
+  
+  input {
+    width: 100%;
+    margin: 23px 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid black;
+  }
+  
+  label {
+    padding-left: 1px;
+  }
+  
+  input::placeholder {
+    color: rgba(12, 12, 12, 0.731);
+  }
+  
+  .login-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Adjust this value to move the button up or down */
+  }
+  
+  button {
+    padding: 5px 15px;
+    background-color: rgb(106, 183, 238);
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 0;
+  }
+  
+  button:hover {
+    background-color: rgb(169, 202, 226);
+  }
+  
+  p {
+    margin-left: 5px;
+    font-size: 15px;
+  }
+  
+  /* Media query for screens smaller than 768px (e.g., mobile devices) */
+  @media (max-width: 767px) {
+    form {
+      width: 90%;
+    }
+  
+    input {
+      margin: 5px 0;
+    }
+  }
+  /* Add this to your Login.css */
+  
+  .signup-paragraph {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin-top as needed */
+  }
+  
+  .signup-paragraph p {
+    font-size: 16px; /* Adjust the font size as needed */
+  }
+  
+  .signup-paragraph a {
+    text-decoration: none;
+    color: rgb(106, 183, 238); /* Link color */
+  }
+  
+  .signup-paragraph a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
