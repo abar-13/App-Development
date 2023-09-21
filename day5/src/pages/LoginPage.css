@@ -1,0 +1,76 @@
+/* Login.css */
+
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4ECDC4;
+    min-height: 100vh;
+  }
+  
+ 
+  
+  .card-panel {
+    position: relative;
+    padding: 32px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-form {
+    margin-top: 1rem;
+  }
+  
+  .login-form .input-field {
+    margin-bottom: 2rem;
+  }
+  
+  .login-form label {
+    font-size: 1rem;
+  }
+  
+  .login-text {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+  
+  .login-text input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  .login-text label {
+    margin: 0;
+  }
+  
+  
+  label {
+    padding-left: 1px;
+  }
+  input {
+    width: 100%;
+    margin: 23px 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid black;
+  }
+  .login-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Adjust this value to move the button up or down */
+    cursor: pointer;
+  }
+  
+  button {
+    padding: 5px 15px;
+    background-color: rgb(106, 183, 238);
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 0;
+  }
+    

@@ -1,0 +1,84 @@
+.navbar {
+  background-color: #007bff;
+  color: #fff;
+  display: flex;
+  justify-content: space-between; /* Align content to the space between the navbar */
+  align-items: center;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 20px; 
+}
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.navbar-logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0; 
+}
+.navbar-links li {
+  margin-right: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+.navbar-divider {
+  margin: 0 10px; 
+  color: #ccc; 
+}
+
+
+.dashboard-container {
+  max-height: calc(100vh - 70px);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+.dashboard-option {
+  text-align: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.dashboard-option h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.dashboard-option p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #777;
+}
+
+.dashboard-option a {
+  display: block;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-option a:hover {
+  background-color: #0056b3;
+}
