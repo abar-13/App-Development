@@ -1,0 +1,41 @@
+/* Reset some default styles for list items */
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Style the navbar */
+.navbar {
+    /* background-color:linear-gradient(blue);  */
+    color: #fff; /* Text color */
+    padding: 1px; /* Adjust the padding as needed */
+    position: fixed; /* Fixed position to keep it at the top */
+    top: 0; /* Position it at the top */
+    right: 0; /* Position it at the right */
+    background-color: rgb(49, 46, 46);
+}
+
+/* Style the navigation list */
+.nav-list {
+    display: flex; /* Display the list items in a row */
+    justify-content: flex-end; /* Align the list items to the right */
+    padding-right: 20px; /* Add some right padding */
+}
+
+/* Style the navigation items */
+.nav-item {
+    margin: 0 10px; /* Add spacing between items */
+}
+
+/* Style the navigation links */
+.nav-link {
+    text-decoration: none; /* Remove underlines from links */
+    color: blue; /* Text color for links */
+    font-weight: bold; /* Set font weight for links */
+}
+
+/* Change link color on hover */
+.nav-link:hover {
+    color: #ff6600; /* Change the color on hover */
+}
