@@ -1,0 +1,109 @@
+
+body, h1, h2, ul, li, p {
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:#fff;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #007bff;
+    color: #fff;
+  
+    
+  }
+  
+  .header h1 {
+    font-size: 36px;
+    
+  }
+  
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .schedule-meeting, .upcoming-meetings {
+    flex: 1;
+    margin: 0 10px;
+    
+  }
+  
+  .meeting-form {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    color :black;
+    
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="time"],
+  textarea {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .meeting-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .meeting-list li {
+    border: 1px solid #ccc;
+    border-radius: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .meeting-title {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .meeting-date, .meeting-time, .meeting-participants {
+    display: block;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .meeting-description {
+    font-size: 16px;
+    margin-top: 10px;
+  }
