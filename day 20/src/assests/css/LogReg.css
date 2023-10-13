@@ -1,0 +1,131 @@
+
+.auth-form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 0.5rem;
+}
+
+button {
+  border: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #338eb3;
+  margin-top: 1rem; /* Add margin to create space below the button */
+}
+
+.link-btn {
+  background: none;
+  color: white;
+  text-decoration: underline;
+  margin-top: 1.5rem; /* Add margin to create space between the button and the link */
+}
+.App {
+    text-align: center;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(79deg, #338eb3,#8a95c2 48%,#ebf6ff);
+  }
+  .auth-form-container,.login-form,.register-form
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 600px)
+  {
+    .auth-form-container
+  {
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+  }
+  label{
+    text-align: left;
+    padding: 0.25rem 0;
+  }
+  input{
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+  
+  }
+  button{
+    border: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    cursor:pointer;
+    color: #338eb3;
+  }
+  .link-btn
+  {
+    background:none;
+    color:white;
+    text-decoration: underline;
+  }
+  /* LogReg.css */
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f1f1f1;
+}
+
+.auth-inner {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 350px;
+  text-align: center;
+}
+
+.f-1 h3 {
+  color: #333;
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+.form-control {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.custom-control-label {
+  color: #333;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.forgot-password {
+  margin: 15px 0;
+  color: #333;
+}
+
+/* Customize the styles further to match your application's design */

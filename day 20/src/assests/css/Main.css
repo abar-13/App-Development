@@ -1,0 +1,249 @@
+/* YourComponent.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  i {
+    margin-right: 10px;
+  }
+  
+  h2 {
+    margin: 0px;
+  }
+  
+  h6 {
+    margin: 0px;
+    color: #777;
+  }
+  
+  #accordian {
+    background: #5161ce;
+    width: 250px;
+    padding: 0px;
+    float: left;
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+  }
+  
+  .main-navbar {
+    position: relative;
+  }
+  
+  #accordian li {
+    list-style-type: none;
+  }
+  
+  #accordian ul li a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 45px;
+    display: block;
+    padding: 0px 20px;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    position: relative;
+    text-align: left;
+  }
+  
+  #accordian > ul > li.active > a {
+    color: #5161ce;
+    background-color: transparent;
+    transition: all 0.7s;
+  }
+  
+  #accordian a:not(:only-child):after {
+    content: "\f105";
+    position: absolute;
+    right: 20px;
+    top: 10%;
+    font-size: 14px;
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+    transition: 0.5s;
+  }
+  
+  #accordian .active > a:not(:only-child):after {
+    transform: rotate(90deg);
+  }
+  
+  .selector-active {
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    height: 37px;
+    top: 0px;
+    left: 0px;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    background-color: #fff;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+  
+  .selector-active .top,
+  .selector-active .bottom {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    right: 0;
+  }
+  
+  .selector-active .top {
+    top: -25px;
+  }
+  
+  .selector-active .bottom {
+    bottom: -25px;
+  }
+  
+  .selector-active .top:before,
+  .selector-active .bottom:before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #5161ce;
+  }
+  
+  .selector-active .top:before {
+    left: -25px;
+    top: -25px;
+  }
+  
+  .selector-active .bottom:before {
+    bottom: -25px;
+    left: -25px;
+  }
+  .selector-active {
+    position: absolute;
+    width: 4px; /* Adjust the width of the selector as needed */
+    background-color: #007BFF; /* Adjust the background color as needed */
+    transition: top 0.3s ease-in-out, height 0.3s ease-in-out;
+  }
+  
+
+  /* Set the accordion container to display on the left side */
+#accordian {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px; /* Adjust this width as needed */
+  height: 100%; /* Adjust this height as needed */
+  background-color:blueviolet; /* Set the background color */
+  color: #fff; /* Set the text color */
+}
+
+/* Style the accordion menu items */
+#accordian ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#accordian ul li {
+  padding: 10px;
+}
+
+#accordian ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Add hover effect to the menu items */
+#accordian ul li:hover {
+  background-color: #555;
+}
+/* CSS for Main component */
+.footer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: linear-gradient(blue,violet); /* Background color for the footer */
+  padding: 20px; /* Adjust padding as needed */
+  text-align: center; /* Center-align the content */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle separation */
+}
+
+/* Style the footer links */
+.footer-links {
+  margin-bottom: 10px; /* Add some spacing between links and icons */
+}
+
+.footer-links a {
+  text-decoration: none; /* Remove underlines from links */
+  color: #333; /* Text color for links */
+  margin: 0 10px;
+  
+  top: 10px;
+  left: 1060px; /* Add spacing between links */
+}
+
+/* Style the social media icons */
+.footer-social-media a {
+  text-decoration: none; /* Remove underlines from icons */
+  color: #333; /* Icon color */
+  font-size: 24px; /* Icon size */
+  margin: 0 10px; /* Add spacing between icons */
+}
+
+/* Change icon color on hover */
+.footer-social-media a:hover {
+  color: #007bff; /* Change the color on hover (e.g., blue) */
+}
+.social-btn-container {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center; /* Align items horizontally */
+  z-index: 999; /* Ensure it's above other content */
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  margin-right: 10px; /* Add margin between buttons */
+  transition: transform 0.5s ease-in-out;
+  
+}
+
+.social-btn:last-child {
+  margin-right: 0; /* Remove margin for the last button */
+}
+
+.social-btn:hover {
+  transform: translateX(10px);
+}
+
+.social {
+  /* No need to change the positioning of .social */
+  position: fixed;
+  top: 80%;
+  
+}
+.social-btn-color-instagram{
+  position: absolute;
+  top: 112px;
+  right: 1015px;
+}
+.social-btn-color-telegram{
+  position: absolute;
+    top: 111px;
+    right: 1106px;
+}
+.social-btn-color-whatsapp{
+  position: absolute;
+    top: 111px;
+    right: 1060px;
+}
