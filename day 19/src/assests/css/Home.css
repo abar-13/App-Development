@@ -1,0 +1,30 @@
+/* NavBar.css */
+.navbar {
+    background-color:rgb(246, 201, 201); /* Background color of the navigation bar */
+    color: violet; /* Text color */
+    display: flex;
+    
+    
+    padding: 10px 20px; /* Adjust padding as needed */
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: rgb(235, 76, 76);
+    margin-right: 20px; /* Adjust spacing between buttons */
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline; /* Underline links on hover */
+  }
+  .navbar{
+    position: absolute;
+    top:0;
+  right:0%;
+    
+  }
+
+  .aa{
+    height: 100%;
+  }
